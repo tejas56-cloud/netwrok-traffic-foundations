@@ -1,1 +1,45 @@
+This is how data travels-
+
+LAYER 1- PHYSICAL LAYER  
+Raw bit stream transmission over physical media.
+Cables, light, electricity
+Cloud version: Virtual NIC drivers.
+Physical Security: Hardware tampering, cable tapping, and signal interference.
+
+LAYER 2-DATA LINK LAYER 
+Defining data format on the local network.
+MAC, Switching, ARP
+Cloud: Subnets + ENIs
+Internal Threats: MAC Spoofing, ARP Poisoning, and VLAN Hopping.
+
+LAYER 3- NETWORK LAYER 
+Physical path selection and routing logic.
+IP, Routing
+Cloud version: Route Tables, VPC, IGW
+The Blast Radius: IP spoofing and routing protocol manipulation (BGP/OSPF).
+
+LAYER 4- TRANSPORT LAYER 
+Data transmission via protocols like TCP and UDP.	
+Cloud = NACLs/Security Groups
+Flow Control: Analyzing the TCP 3-Way Handshake for SYN floods or RST attacks.
+
+LAYER 5- SESSION LAYER
+Controlling ports and maintaining sessions.
+Port management and session persistence.	
+cloud- Sticky Sessions / IAM Roles
+Session Hijacking: Exploiting session IDs and port-based authentication failures.
+
+LAYER 6- PRESENTATION LAYER 
+Data formatting and encryption/decryption.
+SSL Termination / KMS
+Encryption Integrity: SSL/TLS vulnerabilities and certificate spoofing.
+Cryptographic Failures: Weak ciphers and cert spoofing.
+
+Layer 7 — Application
+Human-computer interaction; where network services are accessed.
+HTTP, DNS, SSL
+Cloud = API Gateway, ALB, etc.
+Web Attacks: SQLi, XSS, and API exploitation. This is where the user is the weakest link.
+
+
 
