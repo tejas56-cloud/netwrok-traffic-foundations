@@ -1,4 +1,5 @@
 This is how data travels-
+OSI (OPEN SYSTEM INTERCONNECTION) MODEL-
 
 LAYER 1- PHYSICAL LAYER  
 Raw bit stream transmission over physical media.
@@ -40,6 +41,16 @@ Human-computer interaction; where network services are accessed.
 HTTP, DNS, SSL
 Cloud = API Gateway, ALB, etc.
 Web Attacks: SQLi, XSS, and API exploitation. This is where the user is the weakest link.
+
+💡OSI STACK- THE CLOUD ENFORCEMENT MAP
+APP → L7
+TCP/UDP → L4
+IP → L3
+MAC + ARP → L2
+Cables/Virtual NIC → L1
+Cloud engineers troubleshoot top-down.
+Security analysts detect attacks bottom-up.
+
 
 
 
