@@ -23,9 +23,10 @@ the tcp/ip mdoel has 4 layers(real practical world internet)
 | Internet         | IP                    |
 | Network Access   | Ethernet, WiFi        |
 
-### 3. client to server flow
 
-# step 1- application layer
+### 3. CLIENT TO SERVER FLOW.
+
+# Step 1- Application layer
 user(client) types (eg- google.com) in the browser,
 
 then-
@@ -33,14 +34,14 @@ Browser creates an HTTP request,
 
 DNS resolves domain → IP address
 
-# step 2 - transport layer(tcp)
+# Step 2 - Transport layer(tcp)
 the tcp establishes conenction using tcp handshake-
 1. Client → SYN (request to connect)
 2. Server → SYN-ACK (acknowledge)
 3. Client → ACK (connection established)
 now connection is eastblished and communication becomes reliable
 
-# step 3 - internet layer (ip)
+# Step 3 - Internet layer (ip)
 data is wrapped into packet
 
 with attached source ip = users ip
@@ -49,7 +50,7 @@ and destination ip=servers ip
 
 Routers use this to decide path across networks.
 
-# step 4 - Network Access Layer
+# Step 4 - Network Access Layer
 here packet is wrapped into frmae 
 
 and it Uses MAC addresses for local delivery
@@ -59,7 +60,7 @@ Laptop -> Router -> ISP
 
 Each hop changes MAC address, but IP stays same.
 
-# step 5 - physical transmission 
+# Step 5 - Physical transmission 
 
 data converted into bits(0s and 1s)
 
@@ -71,7 +72,7 @@ wifi cable
 
 fiber optics
 
-# 4 - at server side  descpasulation happens teh reverse process of sender 
+# 4 - At server side  decapsulation happens the reverse process of sender 
 1. Physical - receives bits  
 2. Data Link - checks MAC  
 3. Internet - checks IP  
@@ -79,6 +80,29 @@ fiber optics
 5. Application - processes request
 
 Server then sends response back using same process.
+
+# 5. TCP VS UDP
+
+|   Feature   |    TCP     |      UDP            |
+|-------------|------------|---------------------|
+| Connection  | Yes        | No                  |
+| Reliability | Guaranteed | Not guaranteed      |
+| Speed       | Slower     | Faster              |
+| Use Case    | HTTPS, login | Streaming, gaming |
+
+
+# 6. Key concepts to remeber 
+
+1.ENCAPSULATION - Each layer adds its own header
+2.Packet - Data + IP (layer 3)
+3.Frame - Packet + MAC (layer 2)
+4.TCP - Reliable copmmunication
+5.UDP - Fast, no guarantee
+6.IP - Handles routing across network 
+
+# TCP/IP stack defines how data is created, transmitted, routed, delivered, and understood across networks.
+
+
 
 
 
