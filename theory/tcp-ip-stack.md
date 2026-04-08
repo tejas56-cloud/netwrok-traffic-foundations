@@ -94,10 +94,15 @@ Server then sends response back using same process.
 # 6. Key concepts to remeber 
 
 1.ENCAPSULATION - Each layer adds its own header
+
 2.Packet - Data + IP (layer 3)
+
 3.Frame - Packet + MAC (layer 2)
+
 4.TCP - Reliable copmmunication
+
 5.UDP - Fast, no guarantee
+
 6.IP - Handles routing across network 
 
 # TCP/IP stack defines how data is created, transmitted, routed, delivered, and understood across networks.
