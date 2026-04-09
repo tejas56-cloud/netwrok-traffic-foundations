@@ -2,11 +2,11 @@
 The PORT is the logical gate (entry/exit point) on a device that decides which application sends or recieves data 
 
 # TCP VS UDP 
-core diffrence -
+core difference -
 
 TRANSIMISSION CONTROL PROTOCOL (TCP)-
 
--Its reliabke,connection-based
+-Its reliable,connection-based
 
 -Used when data must arrive correctly 
 
