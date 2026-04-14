@@ -1,3 +1,3 @@
-DNS resolves the domain name to an IP address, TCP establishes a connection, TLS secures it (if HTTPS), and HTTP is used to request and receive data from the server, which the browser then renders.
+DNS translates domain names into IP addresses using a hierarchical system of servers, enabling users to access websites easily.
 DNS is the system that resolves human-readable domain names into machine-readable IP addresses through a multi-step hierarchical lookup process.
 DNS resolves the domain name to an IP address, TCP establishes a connection, TLS secures it (if HTTPS), and HTTP is used to request and receive data from the server, which the browser then renders.
